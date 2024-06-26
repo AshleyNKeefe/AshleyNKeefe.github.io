@@ -9,7 +9,8 @@ nav {
     list-style-type: none;
     display: inline;
     margin-right: 20px;
-    font-size:25px
+    font-size:25px;
+    color:#CC8B34
 }
     a:link {
     color: #CC8B34;
