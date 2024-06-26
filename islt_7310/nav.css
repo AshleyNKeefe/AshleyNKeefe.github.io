@@ -1,5 +1,4 @@
 nav {
-    color:#CC8B34;
     display: block;
     position: absolute;
     top: 0;
@@ -17,6 +16,9 @@ nav {
     color: #CC8B34;
     text-decoration: none;
 }
+    a:visited{
+        color:#CC8B34;
+}
     a:hover {
     color: #ebbe76;
     text-decoration: none;
@@ -24,5 +26,5 @@ nav {
     li > ul {
     display: none
 }
-    li:hover ul {color:#CC8B34;display: block; position: absolute; left:200px;background-color:black;margin:0;}
-    li:hover ul li a:link{color:#CC8B34;display: block;margin-left:-40px; padding: 8px 12px}
+    li:hover ul {display: block; position: absolute; left:200px;background-color:black;margin:0;}
+    li:hover ul li a:link{display: block;margin-left:-40px; padding: 8px 12px}
