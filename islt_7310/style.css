@@ -46,6 +46,41 @@ main .Quote{
   grid-column: 3 / span 2;
   grid-row: span 2;
 }
+main .AshleyKeefe {
+  text-align: center;
+  grid-column: 1 / span 6;
+  grid-row: span 1;
+}
+main .Intro {
+  text-align: center;
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 2;
+}
+main .HomePhoto {
+  text-align: center;
+  grid-column: 3 / span 4;
+  grid-row: 2 / span 2;
+}
+main .MUPhoto {
+  text-align: center;
+  grid-column: 1 / span 2;
+  grid-row: 3 / span 2;
+}
+main .Reflection {
+  text-align: center;
+  grid-column: 1 / span 6;
+  grid-row: 2 / span 1;
+}
+  main .Academics {
+    text-align: center;
+    grid-column: 3 / span 3;
+    grid-row: 3 / span 2;
+}
+main .CareerGoals {
+  text-align: center;
+  grid-column: 1 / span 6;
+  grid-row: 5 / span 1;
+}
 footer{
   margin: 60px auto;
   padding: 20px;
@@ -53,6 +88,11 @@ footer{
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-auto-rows: 20px;
   gap: 50px;
+}
+main .Projects {
+  text-align: center;
+  grid-column: 1 / span 6;
+  grid-row: 1 / span 3;
 }
 footer div {
   color: #CC8B34;
@@ -78,7 +118,15 @@ footer .Footer{
   main .Photo,
   main .Video,
   main .Education,
-  main .Quote {
+  main .Quote,
+  main .AshleyKeefe,
+  main .Intro,
+  main .HomePhoto,
+  main .MUPhoto,
+  main .Reflection,
+  main .Academics,
+  main .Projects,
+  main .CareerGoals{
     grid-column: 1 / span 2;
   }
 
