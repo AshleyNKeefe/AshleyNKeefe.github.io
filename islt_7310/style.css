@@ -1,5 +1,9 @@
+@font-face {
+  font-family: Raleway;
+  src: url(Font/Raleway-VariableFont_wght.ttf);
+}
 body {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: Raleway;
   background-color: #CC8B34;
   margin: 0;
 }
@@ -116,6 +120,7 @@ footer .Footer{
     margin: 30px auto;
   }
 
+
   main .AboutMe,
   main .Photo,
   main .Video,
@@ -137,5 +142,42 @@ footer .Footer{
     gap: 20px;
     padding: 10px;
     margin: 30px auto;
+  }
+}
+@media print {
+  body{
+    background:transparent !important;
+    color: #000 !important;
+    box-shadow:none !important;
+    text-shadow: none !important;
+    font-family: serif !important;
+}
+
+  header, nav, main .Video, main .Photo {
+    display:none;
+  }
+  main {
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 1fr 1fr 1fr 1fr;
+}
+  main .AboutMe{
+    grid-column: 1 / span 8;
+    grid-row: 1 / span 1;
+  }
+  main .Education{
+    grid-column: 3 / span 6;
+    grid-row: 2 / span 1;
+    align-items: center;
+  }
+  main .Quote{
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 1;
+    align-items: center;
+  }
+  a::after{
+    content: " (" attr(href)")";
   }
 }
