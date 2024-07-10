@@ -111,12 +111,20 @@ footer .Footer{
   grid-column: 1 / span 4;
   grid-row: span 2;
 }
-.footer .icon {
-    display: inline-block;
-    transition: transform 0.3s ease-out;
+.zoom-on-hover {
+  display: inline-block;
+  overflow: hidden;
+  transition: transform 0.3s ease; 
 }
-.footer .icon:hover {
-    transform: scale(1.2);
+
+.zoom-on-hover img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.zoom-on-hover:hover {
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 960px) {
@@ -151,6 +159,7 @@ footer .Footer{
     padding: 10px;
     margin: 30px auto;
   }
+
 }
 @media print {
   body{
