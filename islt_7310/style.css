@@ -56,6 +56,7 @@ main .AshleyKeefe {
   text-align: center;
   grid-column: 1 / span 6;
   grid-row: span 1;
+  font-size: large;
 }
 main .Intro {
   text-align: center;
@@ -66,6 +67,7 @@ main .HomePhoto {
   text-align: center;
   grid-column: 3 / span 4;
   grid-row: 2 / span 2;
+  place-items: center;
 }
 main .MUPhoto {
   text-align: center;
@@ -86,6 +88,19 @@ main .CareerGoals {
   text-align: center;
   grid-column: 1 / span 6;
   grid-row: 5 / span 1;
+}
+main .staffnurse {
+  text-align: center;
+  grid-column: 1 / span 6;
+  grid-row:1 / span 1;
+}
+main .staffnursephoto {
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 2;
+}
+main .staffnursephoto2 {
+  grid-column: 3 / span 2;
+  grid-row: 2 / span 2;
 }
 footer{
   margin: 60px auto;
