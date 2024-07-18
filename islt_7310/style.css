@@ -108,6 +108,32 @@ main .Form {
   padding: 20px;
   margin-bottom: 5px;
 }
+table#Education
+        {
+          width: 100%;
+            height: 82%;
+        text-align: center;
+        border: 1px solid #000;
+  }
+  table#Education th {
+    background-color: #000;
+    color: antiquewhite;
+  }
+  table#Education tr:nth-child(even) {
+    background-color: #000;
+    color: antiquewhite;}
+
+  table#Education tr:nth-child(odd) {
+    background-color: #CC8B34;}
+
+    caption {
+      font-weight: bold;
+      font-size: 1.2em;
+      caption-side: top;
+      padding: 8px;
+      background-color: #CC8B34;
+      caption-side: top;
+    }
 footer{
   margin: 60px auto;
   padding: 20px;
@@ -120,7 +146,7 @@ footer{
 main .Projects {
   text-align: center;
   grid-column: 1 / span 6;
-  grid-row: 1 / span 3;
+  grid-row: 1 / span 2;
 }
 footer div {
   color: #CC8B34;
@@ -146,6 +172,27 @@ footer .Footer{
 
 .zoom-on-hover:hover {
   transform: scale(1.1);
+}
+
+@media only screen and (max-width: 1250px) {
+  tr {
+      font-size: 16px;
+  }
+table#Education {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+}
+@media only screen and (max-width: 800px) {
+  tr {
+      font-size: 12px;
+  }
+  table#Education {
+      width: 90%;
+      margin-left: 5%;
+      margin-right: 5%;
+  }
 }
 
 @media screen and (max-width: 960px) {
